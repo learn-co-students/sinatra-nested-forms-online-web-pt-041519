@@ -7,20 +7,13 @@
   </p>
 </div>
 
-<div class="ship">
-  <h2>First Ship</h2>
-	<p>
-    Name: <%= @ships.first.name %><br>
-	  Type: <%= @ships.first.type %><br>
-    Booty: <%= @ships.first.booty %>
-  </p>
-</div>
-
-<div class="ship">
-  <h2>Second Ship</h2>
-	<p>
-    Name: <%= @ships.last.name %><br>
-    Type: <%= @ships.last.type %><br>
-    Booty: <%= @ships.last.booty %>
-  </p>
-</div>
+<% @ships.each.with_index(1) do |ship, index| %>
+  <div class="ship">
+    <h2>Ship <%= index %></h2>
+    <p>
+      Name: <%= ship.name %><br>
+      Type: <%= ship.type %><br>
+      Booty: <%= ship.booty %>
+    </p>
+  </div>
+<% end %>
