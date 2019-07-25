@@ -44,6 +44,10 @@ describe "FormsLab::App" do
       expect(last_response.body).to include("pirate[ships][][type]")
       expect(last_response.body).to include("pirate[ships][][booty]")
     end
+    # it "renders the second ship's " do
+    #   expect(last_response.body).to include("ship_name_2")
+    #   expect(last_response.body).to include("ship_type_2")
+    # end
   end
 
   describe "POST '/pirates'" do
