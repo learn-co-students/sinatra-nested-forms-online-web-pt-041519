@@ -1,7 +1,24 @@
-<h1>Display your Pirate here</h1>
+<!DOCTYPE html>
+  <head>
+    <title>Ahoy matey!</title>
+  </head>
+  <body>
+    <h1>Pirate</h1>
+    <p><b>Name:</b> <%= @pirate.name %></p>
+    <p><b>Weight:</b> <%= @pirate.weight %></p>
+    <p><b>Height:</b> <%= @pirate.height %></p>
+    <br>
 
+    <h2>Ship No. 1</h2>
+    <p><b>Name:</b> <%= @ships[0].name %></p>
+    <p><b>Type:</b> <%= @ships[0].type %></p>
+    <p><b>Booty:</b> <%= @ships[0].booty %></p>
+    <br>
 
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+    <h2>Ship No. 2</h2>
+    <p><b>Name:</b> <%= @ships[1].name %></p>
+    <p><b>Type:</b> <%= @ships[1].type %></p>
+    <p><b>Booty:</b> <%= @ships[1].booty %></p>
+    <br>
+  </body>
+</html>
